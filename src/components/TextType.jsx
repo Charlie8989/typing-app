@@ -22,6 +22,7 @@ const TextType = ({
   onSentenceComplete,
   startOnVisible = false,
   reverseMode = false,
+  color=color,
   ...props
 }) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -41,7 +42,7 @@ const TextType = ({
   }, [variableSpeed, typingSpeed]);
 
   const getCurrentTextColor = () => {
-    if (textColors.length === 0) return '#ffffff';
+    if (textColors.length === 0) return color;
     return textColors[currentTextIndex % textColors.length];
   };
 
