@@ -6,7 +6,7 @@ import { Moon, Sun } from "lucide-react";
 
 function App() {
   const [word, setWord] = useState("0");
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
   const [timeLeft, setTimeLeft] = useState(5 * 60);
   const [isActive, setIsActive] = useState(false);
 
@@ -68,11 +68,11 @@ function App() {
             </div>
             <button
               className={`rounded-full w-[30px] h-[30px] flex justify-center items-center ${
-                theme ? "bg-white/80 text-[#111]" : "bg-[#111] text-white"
+                theme ? "bg-white/80 text-[#111]" : "bg-black/80 text-white"
               } `}
               onClick={toggleTheme}
             >
-              {theme ? <Moon className="size-4" /> : <Sun className="size-4" />}
+              {theme ? <Sun className="size-4" /> : <Moon className="size-4" />}
             </button>
           </div>
 

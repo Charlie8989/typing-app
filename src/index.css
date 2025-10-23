@@ -1,4 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Mangal&display=swap");
 @import "tailwindcss";
+
+.editor-box {
+  font-family: 'Mangal', sans-serif; 
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
 
 body,
 .dark-mode,
